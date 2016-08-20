@@ -1,0 +1,34 @@
+{
+  "name": "request-observable",
+  "version": "1.0.0",
+  "description": "Request-observable > creates RxJS 5 observable from request options",
+  "main": "index.js",
+  "dependencies": {
+    "request": "*",
+    "rxjs": "^5.0.0-beta.11"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "snazzy": "^4.0.1",
+    "standard": "^8.0.0-beta.5"
+  },
+  "scripts": {
+    "test": "ava",
+    "syntax": "standard | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex0007/request-observable.git"
+  },
+  "keywords": [
+    "request",
+    "rxjs",
+    "observable"
+  ],
+  "author": "Alex0007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex0007/request-observable/issues"
+  },
+  "homepage": "https://github.com/Alex0007/request-observable#readme"
+}
