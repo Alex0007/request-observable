@@ -8,9 +8,9 @@ test('Successful request', t => {
   return requestObservable({
       url: 'http://echo.jsontest.com/thisThing/working'
     })
-    .map(JSON.parse)
+    .map(({body}) => JSON.parse(body))
     .do({
-      next: jsonOutput => t.is(jsonOutput.thisThing, 'working'),
+      next: (jsonOutput) => t.is(jsonOutput.thisThing, 'working'),
       error: t.fail
     })
 })

@@ -6,7 +6,7 @@ module.exports = options => Rx.Observable.create(o => {
     if (err || resp.statusCode !== 200) {
       o.error(err || new Error(`Status code ${resp.statusCode}`))
     } else {
-      o.next(body)
+      o.next({resp, body})
     }
     o.complete()
   })

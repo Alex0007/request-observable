@@ -1,6 +1,6 @@
 {
   "name": "request-observable",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Request-observable > creates RxJS 5 observable from request options",
   "main": "index.js",
   "dependencies": {
