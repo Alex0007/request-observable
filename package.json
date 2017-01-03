@@ -1,20 +1,19 @@
 {
   "name": "request-observable",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Request-observable > creates RxJS 5 observable from request options",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
   "dependencies": {
+    "@types/request": "^0.0.39",
     "request": "*",
     "rxjs": "^5.0.0-beta.11"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "snazzy": "^4.0.1",
-    "standard": "^8.0.0-beta.5"
+    "ava": "^0.16.0"
   },
   "scripts": {
-    "test": "ava",
-    "syntax": "standard | snazzy"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
