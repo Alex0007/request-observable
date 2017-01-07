@@ -1,6 +1,6 @@
 let Rx = require('rxjs/Rx')
 let test = require('ava')
-let requestObservable = require('./dist')
+let requestObservable = require('./dist').createRequestObservable
 
 test('Successful request', t => {
   t.plan(1)
