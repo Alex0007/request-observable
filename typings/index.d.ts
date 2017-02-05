@@ -6,8 +6,10 @@ interface Response {
   body: any
 }
 
+export type RequestOptions = request.OptionsWithUrl | request.OptionsWithUri
+
 export interface CreateRequestObservable {
-  (options: request.OptionsWithUrl | request.OptionsWithUri) : Observable<Response>
+  (options: RequestOptions) : Observable<Response>
 }
 
-declare function createRequestObservable (options: request.OptionsWithUrl | request.OptionsWithUri): Observable<Response>
+declare function createRequestObservable (options: RequestOptions): Observable<Response>
